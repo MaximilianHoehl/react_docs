@@ -1,0 +1,22 @@
+{
+  "name": "react_docs",
+  "version": "1.0.0",
+  "description": "Docs, tips and tricks for react",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaximilianHoehl/react_docs.git"
+  },
+  "author": "Maximilian Höhl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaximilianHoehl/react_docs/issues"
+  },
+  "homepage": "https://github.com/MaximilianHoehl/react_docs#readme",
+  "dependencies": {
+    "react": "^17.0.2"
+  }
+}
