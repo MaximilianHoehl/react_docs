@@ -1,7 +1,7 @@
 ```
 Its important to free up resources. 
-Therefore we only create self rendering components when they are needed (***Mounting***).
-And we clear those components up as soon as we do not need them anymore (***Unmounting***).
+Therefore we only create self rendering components when they are needed - **Mounting**.
+And we clear those components up as soon as we do not need them anymore - **Unmounting**.
 ```
 ### Lifecycle Methods
 *Special methods that get called on specifig lifecycle events*
