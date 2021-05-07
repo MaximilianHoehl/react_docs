@@ -1,34 +1,24 @@
 # Main Concepts
 
 ### General
-<div id="root"> contains the main app component
+- <div id="root"> in index.html contains the main app component
 
 ### Render React Dom
 ```javascript
 const element = <h1>Hello, world</h1>;
 ReactDOM.render(element, document.getElementById('root'));
 ```
-```javascript
-function tick(){        //creates component
-    const element = (   //creates element
-        <div>
-            <h1>Hey there!</h1>
-            <h2>Today: {new Date().toLocalTimeString()}</h2>
-        </div>
-    );
-    ReactDOM.render(element, document.getElementById('root'));
-}
-```
+
 ### Create React Component
-Older way was over ES6 classes
+For stateful components
 ```javascript
 class myComponent extends React.Component{
-    render(){ //React component 'constructor'
+    render(){
         return <h1>I'm {this.props.name}</h1> //element
     }
 }
 ```
-Create component over function (faster)
+Create stateless components over function (faster)
 ```javascript
 function MyComponent(props){ //component
     return <h1>I'm {props.name}</h1> //element
@@ -42,7 +32,8 @@ Represent component as element
 ```javascript
 const myElement = <MyComponent name='LabComp' />; //React passes object 'props' with property 'name' to component 'MyComponent'
 ```
-Another Example
+- You define components properties by setting them in <MyComp prop1='X', prop2='Y' />
+- The react created props object lets you unpack those props
 ```javascript
 function Welcome(props){
     return <h1>Hello, {props.name}!</h1>
@@ -76,7 +67,8 @@ ReactDOM.render(
 ```
 ```
 Name props fom owns point of view, not from parent/context ones.
-(If you create a an avatar-component containing profilepic and username, dont call the name props.author just because you created it during the creation of a commentsection)
+(If you create a an avatar-component containing profilepic and username, 
+dont call the name props.author just because you created it during the creation of a commentsection)
 ```
 Another example of component compositions:
 ```javascript
@@ -111,6 +103,7 @@ function Comment(props){
     );
 }
 ```
+### Important
 ```
 Props are Read-Only!
 We never change their properties inside of a function/class created component
