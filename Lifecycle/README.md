@@ -1,3 +1,4 @@
+# Lifecycle
 ```
 Its important to free up resources. 
 Therefore we only create self rendering components when they are needed - **Mounting**.

@@ -1,3 +1,4 @@
+# JSX
 class -> className
 for -> htmlFor
 Only one tag is valid. All other need to be childs

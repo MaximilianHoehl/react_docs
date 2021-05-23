@@ -1,3 +1,4 @@
+# Events
 <button onClick={activateLasers}> //this is how we add an event handler
   Activate Lasers
 </button>
