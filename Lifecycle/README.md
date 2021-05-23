@@ -14,6 +14,7 @@ And we clear those components up as soon as we do not need them anymore - **Unmo
 - Updatemethod contains the code to execute per update
 - Lifecyclemethods define timers that call Updatemethod or destroy them
 ```javascript
+//state is an object that changes over time (here: when edited by timer callback)
 class Clock extends React.Component{
     constructor(props){
         super(props);
